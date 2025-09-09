@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 
 <html lang="en">
 
@@ -16,9 +15,16 @@
         font-family: verdana;
       }
 
-      .main-container {
-        border: 4px solid #7220c0;
-        /*display: flex; /* block level flex container */
+      .main-container{ 
+        border: 5px solid #7220c0;
+        height: 500px;
+        display: flex; /* block level flex container */
+        /*display: inline-flex; /* inline level flex container */
+        /*flex-wrap: wrap; /* items will wrap to next line if necessary */
+        /*flex-direction: column-reverse; /* main axis is vertical, cross axis is horizontal */
+        flex-flow: column wrap;
+        justify-content: center; /*main axis*/
+        align-items: center;*/
       }
 
       .item {
@@ -26,6 +32,9 @@
         font-size: 1rem;
         padding: 0.75rem;
         text-align: center;
+        border: 3px solid black;
+        margin: 15px;
+        /*width: 150px;*/
       }
 
       .item-1 {
@@ -75,16 +84,17 @@
   <body>
 
     <div class="main-container">
-      <div class="item item-1">item-1</div>
-      <div class="item item-2">item-2</div>
-      <div class="item item-3">item-3</div>
-      <div class="item item-4">item-4</div>
-      <div class="item item-5">item-5</div>
-      <div class="item item-6">item-6</div>
-      <div class="item item-7">item-7</div>
-      <div class="item item-8">item-8</div>
-      <div class="item item-9">item-9</div>
-      <div class="item item-10">item-10</div>
+      <div class="item item-1">item 1</div>
+      <div class="item item-2">item 2</div>
+      <div class="item item-3">item 3</div>
+      <div class="item item-4">item 4</div>
+      <div class="item item-5">item 5</div>
+      <div class="item item-6">item 6</div>
+      <div class="item item-7">item 7</div>
+      <div class="item item-8">item 8</div>
+      <div class="item item-9">item 9</div>
+      <div class="item item-10">item 10</div>
+
     </div>
     
   </body>
