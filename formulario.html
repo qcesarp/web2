@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .checkbox {
+            margin-top: 10px;
+        }
+
+        .radio-group {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre (máx. 20 caracteres):</label>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required>
+
+        <label for="apellidos">Apellidos (máx. 20 caracteres):</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="20" required>
+
+        <div class="radio-group">
+            <label>Sexo:</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre" required>
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer" required>
+            <label for="mujer">Mujer</label>
+        </div>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <div class="checkbox">
+            <input type="checkbox" id="novedades" name="novedades" checked>
+            <label for="novedades">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones">Acepto las condiciones generales del sitio sobre protección de datos</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
