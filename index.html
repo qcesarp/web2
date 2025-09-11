@@ -15,10 +15,15 @@
             border: 3px solid #000000;
             height: 300px;
             width: 300px;
-            display: flex;
+            /*display: flex;*/
             /*justify-content: center;
             align-items: center;*/
-            
+            /*flex-direction: column;*/
+            /*align-items: space-between;*/
+            display:  grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        
 
         }
 
@@ -30,24 +35,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px;
+        width: 80%;
+        height: 80%;
 
 
       }
 
       .item-1 {
         background-color:#000000;
+        grid-column: 1;
+        grid-row: 1;
         
       }
 
       .item-2 {
         background-color:#484849;
+        grid-column: 2;
+        grid-row: 2;
        
       }
 
       .item-3 {
         background-color:#9e2200;
+        grid-column: 3;
+        grid-row: 3;
       }
 
     </style>
