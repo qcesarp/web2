@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1.4-flex-container-item.html</title>
+    <title>grid</title>
 
     <style type="text/css">
 
@@ -17,23 +17,46 @@
 
       .main-container{ 
         border: 5px solid #7220c0;
-        height: 500px;
-        display: flex; /* block level flex container */
-        /*display: inline-flex; /* inline level flex container */
-        /*flex-wrap: wrap; /* items will wrap to next line if necessary */
-        /*flex-direction: column-reverse; /* main axis is vertical, cross axis is horizontal */
-        flex-flow: column wrap;
-        justify-content: center; /*main axis*/
-        align-items: center;
-      }
+        /*height: 500px;*/
+        display: grid;
+        width: 980px;
+        /*height: 500px;*/
+        margin: 0 auto;
+
+        /*grid-template-columns: 200px 2fr 3fr;*/
+        /*grid-template-columns: 15% 35% 50%;*/
+        /*grid-template-columns: repeat(2, 1fr);*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        grid-template-areas: 
+          "header header header header"
+          "nav content content ads"
+          "nav content content ads"
+          "footer footer footer footer";
+
+        /*grid-column-gap: 10px;
+        grid-row-gap: 20px;*/
+        /*grid-gap: 10px 20px;*/
+
+    }
+    .main-container > * {
+        background-color: #00bcd4;
+        padding: 20px;
+    }
+
+    .header-section {
+        grid-area: header;
+        background-color: #0199ad;
+    }
 
       .item {
         color: #ffffff;
         font-size: 1rem;
         padding: 0.75rem;
         text-align: center;
-        border: 3px solid black;
-        margin: 15px;
+        /*border: 3px solid black;*/
+        /*margin: 15px;*/
         /*width: 150px;*/
       }
 
@@ -73,6 +96,9 @@
         background-color: #64A466;
       }
       
+      .item-10 {
+        background-color:#2E8B56;
+      }
 
     </style>
 
@@ -90,6 +116,7 @@
       <div class="item item-7">item 7</div>
       <div class="item item-8">item 8</div>
       <div class="item item-9">item 9</div>
+      <div class="item item-10">item 10</div>
 
     </div>
     
