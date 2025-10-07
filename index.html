@@ -3,93 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <title>Salteñitas Masa Fina</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+ 
 </head>
 <body>
 
-  
-  <div class="container">
-  <header>
-    <img class="logo" src="images/masaFina.png" alt="Logo Salteñitas">
-    <h1>SALTEÑITAS MASA FINA</h1>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Menú</a>
-      <a href="#">Promociones</a>
-      <a href="#">Contacto</a>
-    </nav>
-    <button class="btn">Pedir Ahora</button>
-  </header>
-
-
-  <section class="hero">
-    <img src="images/saltenas.jpg" alt="Salteñas">
-    <div>
-      <h2>Las mejores salteñas de la ciudad, crujientes y jugosas.</h2>
-      <button class="btn">Haz tu pedido online</button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/masaFina.png" alt="Logo" width="50" class="me-2">
+        <strong>Salteñitas Masa Fina</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+        <a class="btn btn-warning ms-3" href="#">Pedir Ahora</a>
+      </div>
     </div>
-  </section>
+  </nav>
 
 
-  <section class="productos">
-    <h3>Salteñas</h3>
-    <div class="cards">
-      <div class="card">
-        <img src="images/saltenaPollo.jpg" alt="Salteña de pollo">
-        <p>Salteña de Pollo</p>
-        <p>$ ___</p>
-        <button>Añadir al carrito</button>
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/saltenas.jpg" class="img-fluid rounded" alt="Salteñas">
       </div>
-      <div class="card">
-        <img src="images/saltenaCarne.jpg" alt="Salteña de carne">
-        <p>Salteña de Carne</p>
-        <p>$ ___</p>
-        <button>Añadir al carrito</button>
-      </div>
-      <div class="card">
-        <img src="images/saltenaMixta.jpg" alt="Salteña mixta">
-        <p>Salteña Mixta</p>
-        <p>$ ___</p>
-        <button>Añadir al carrito</button>
+      <div class="col-md-6 text-center text-md-start">
+        <h2 class="fw-bold">Las mejores salteñas de la ciudad, crujientes y jugosas.</h2>
+        <a href="#" class="btn btn-danger mt-3">Haz tu pedido online</a>
       </div>
     </div>
   </section>
 
 
-  <section class="promos">
-    <div class="promo">2x1 en salteñas de pollo todos los martes</div>
-    <div class="promo">Combo familiar: 12 salteñas + refresco</div>
-  </section>
+  <section class="container my-5">
+  <h3 class="text-center mb-4">Salteñas</h3>
+
+  <div id="saltenasCarousel" class="carousel slide" data-bs-ride="carousel">
+    
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#saltenasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Salteña de Pollo"></button>
+      <button type="button" data-bs-target="#saltenasCarousel" data-bs-slide-to="1" aria-label="Salteña de Carne"></button>
+      <button type="button" data-bs-target="#saltenasCarousel" data-bs-slide-to="2" aria-label="Salteña Mixta"></button>
+    </div>
 
 
-  <section class="opiniones">
-    <h3>Opiniones</h3>
-    <p>La mejor salteña que probé, jugosa y deliciosa.</p>
-  </section>
+    <div class="carousel-inner text-center">
+
+      <div class="carousel-item active">
+        <img src="images/saltenaPollo.jpg" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Salteña de Pollo">
+        <div class="carousel-caption d-block">
+          <h5>Salteña de Pollo</h5>
+          <p>$12.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
 
 
-  <footer>
-  <p>Horarios: Lunes - Domingo</p>
-  <div class="social">
-    <a href="https://map.com" target="_blank">
-      <img src="images/ubicacion.png" alt="ubicacion">
-    </a>
-    <a href="https://facebook.com" target="_blank">
-      <img src="images/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://instagram.com" target="_blank">
-      <img src="images/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://wa.me/59170000000" target="_blank">
-      <img src="images/whatsApp.png" alt="WhatsApp">
-    </a>
-    <a href="https://tiktok.com" target="_blank">
-      <img src="images/tiktok.webp" alt="tikTok">
-    </a>
+      <div class="carousel-item">
+        <img src="images/saltenaCarne.jpg" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Salteña de Carne">
+        <div class="carousel-caption d-block">
+          <h5>Salteña de Carne</h5>
+          <p>$13.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="images/saltenaMixta.jpg" class="d-block mx-auto img-fluid" style="max-height: 400px;" alt="Salteña Mixta">
+        <div class="carousel-caption d-block">
+          <h5>Salteña Mixta</h5>
+          <p>$14.00</p>
+          <a href="#" class="btn btn-primary">Añadir al carrito</a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#saltenasCarousel" data-bs-slide="prev">
+      <span class="fs-1 text-warning" aria-hidden="true">&#10094;</span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#saltenasCarousel" data-bs-slide="next">
+      <span class="fs-1 text-warning" aria-hidden="true">&#10095;</span> 
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
   </div>
-</footer>
+</section>
+
+
+
+<section class="container my-5">
+    <h3 class="text-center mb-4">Promociones</h3>
+
+
+    <div class="alert alert-success text-center mx-auto" role="alert" style="max-width: 600px;" id="promo1" onclick="toggleInfo('info1')">
+      2x1 en salteñas de pollo todos los martes
+    </div>
+    <div id="info1" class="alert alert-secondary text-center mx-auto" style="max-width: 600px; display: none;">
+      Más detalles sobre la promoción: Solo aplica los martes, no acumulable con otras ofertas.
+    </div>
+
+
+    <div class="alert alert-info text-center mx-auto" role="alert" style="max-width: 600px;" id="promo2" onclick="toggleInfo('info2')">
+      Combo familiar: 12 salteñas + refresco grande
+    </div>
+    <div id="info2" class="alert alert-secondary text-center mx-auto" style="max-width: 600px; display: none;">
+      Más detalles sobre la promoción: Válido para grupos de 4 o más personas, solo en el local.
+    </div>
+  </section>
+
+
+
+  <section class="container my-5">
+    <h3 class="text-center mb-4">Opiniones</h3>
+    <div class="card mx-auto" style="max-width: 600px;">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>"La mejor salteña que probé, jugosa y deliciosa."</p>
+          <footer class="blockquote-footer">Cliente feliz</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex justify-content-between">
+      <p class="mb-2">Horarios: Lunes a Domingo</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://map.com" target="_blank">
+          <img src="images/ubicacion.png" alt="Ubicación" width="30">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook" width="30">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram" width="30">
+        </a>
+        <a href="https://wa.me/59170000000" target="_blank">
+          <img src="images/whatsApp.png" alt="WhatsApp" width="30">
+        </a>
+        <a href="https://tiktok.com" target="_blank">
+          <img src="images/tiktok.webp" alt="TikTok" width="30">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</div>
+  <script>
+
+    function toggleInfo(infoId) {
+        var infoDiv = document.getElementById(infoId);
+        if (infoDiv.style.display === "none") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+  </script>
+
 </body>
 </html>
